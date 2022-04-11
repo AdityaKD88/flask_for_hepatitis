@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from joblib import load
-from data_set import creatuser, db
+from data_set import creatuser, db, User
 
 app = Flask(__name__)
 
@@ -62,6 +62,11 @@ def index():
                     ascites=ascites, varices=varices, bilirubin=bilirubin, alk_phosphate=alk_phosphate,
                     sgot=sgot, albumin=albumin, protime=protime, histology=histology, result=result,user=user)
     return render_template('index.html')
+
+@app.route('/data')
+def display():
+    data = User.query.all()
+    return render_template('data.html', data=data)
 
 if __name__ == '__main__':
     app.run(debug=True)

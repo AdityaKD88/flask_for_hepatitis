@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-center p-3">Database</h1>
+            </div>
+            <form method="post" class="card" style="background-color: rgba(187, 166, 166, 0.89);">
+                <div class="card-body">
+                    {% for d in data %}
+                    <div class="col">
+        
+                            {{ d.id }}
+                            {{ d.sex }}
+                            {{ d.steroid }}
+                            {{ d.antivirals }}
+                            {{ d.fatigue }}
+                            {{ d.malaise }}
+                            {{ d.anorexia }}
+                            {{ d.liver_big }}
+                            {{ d.liver_firm }}
+                            {{ d.spleen_palable }}
+                            {{ d.spiders }}
+                            {{ d.ascites }}
+                            {{ d.varices }}
+                            {{ d.bilirubin }}
+                            {{ d.alk_phosphate }}
+                            {{ d.sgot }}
+                            {{ d.albumin }}
+                            {{ d.protime }}
+                            {{ d.histology }}
+                    </div>
+                    {% endfor %}
+                </div>
+            <form>
+        </div>
+    </div>
+{% endblock %}
