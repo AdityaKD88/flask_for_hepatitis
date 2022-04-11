@@ -4,21 +4,21 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="text-center">
+            <h2 class="text-center p-3"><u>
                 Prediction for Heapatitis
-            </h2>
-            <form method="post" class="card" style="background-color: rgba(15, 204, 40, 0.808);">
+            </u></h2>
+            <form method="post" class="card" style="background-color: rgba(255, 255, 255, 0.89);">
                 <div class="card-body">
                     <div class="mb-3">
-                        <h2><u>Fill the form</u></h2>
+                        <h2>Fill the form</h2>
                     </div>
-                    <div class="row">
+                    <div class="row p-2">
                     <div class="col">
-                        <label for='sex'>Sex: </label>
-                        <select id="sex" name="sex">
+                        <label for='histology'>Histology: </label>
+                        <select id="histology" name="histology">
                             <option value="0">SELECT</option>
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
                         </select>
                     </div>
                     <div class="col">
@@ -38,7 +38,7 @@
                         </select>
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-2">
                     <div class="col">
                         <label for='fatigue'>Fatigue: </label>
                         <select id="fatigue" name="fatigue">
@@ -64,7 +64,7 @@
                         </select>
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-2">
                     <div class="col">
                         <label for='liver_big'>Big Liver: </label>
                         <select id="liver_big" name="liver_big">
@@ -90,7 +90,7 @@
                         </select>
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-2">
                     <div class="col">
                         <label for='spiders' title="Benign vascular lesions mostly seen in patients with decompensated liver cirrhosis">Spider Nevi: </label>
                         <select id="spiders" name="spiders">
@@ -116,7 +116,7 @@
                         </select>
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-2">
                     <div class="col">
                         <label for="age">Age</label>
                         <input type="number" name="age" id="age">
@@ -130,7 +130,7 @@
                         <input type="number" name="alk_phosphate" id="alk_phosphate">
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-2">
                     <div class="col">
                         <label for='sgot' title="Serum Glutamic-Oxaloacetic Transaminase,is a protein made by liver cells">Sgot: </label>
                         <input type="number" name="sgot" id="sgot">
@@ -144,17 +144,17 @@
                         <input type="number" name="protime" id="protime">
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-2">
                     <div class="col">
-                        <label for='histology'>Histology: </label>
-                        <select id="histology" name="histology">
+                        <label for='sex'>Sex: </label>
+                        <select id="sex" name="sex">
                             <option value="0">SELECT</option>
-                            <option value="1">No</option>
-                            <option value="2">Yes</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
                         </select>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <button type="submit" class="btn btn-dark" style="height: 2cm; width: 4cm;">Submit</button>
                     </div>
                     </div>
                 </div>
